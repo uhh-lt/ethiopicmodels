@@ -5,6 +5,7 @@ from tqdm import tqdm
 from difflib import SequenceMatcher
 import re
 import pickle
+import numpy as np
 
 
 def matcher(string, pattern):
@@ -81,11 +82,17 @@ def main():
        #                 columns=['text', 'annotation'])
 
     data = pd.read_csv('../data/ner_data.csv',encoding='utf8')
+    msk = np.random.rand(len(data)) < 0.9
 
+    train = data[msk]
+
+    test = data[~msk]
     ## path to save the txt file.
-    filepath = '../data/ner_train.txt'
+    train_filepath = '../data/ner_train.txt'
+    test_filepath = '../data/ner_test.txt'
     ## creating the file.
-    create_data(data, filepath)
+    create_data(train, train_filepath)
+    create_data(test, test_filepath)
 
 
 if __name__ == '__main__':
