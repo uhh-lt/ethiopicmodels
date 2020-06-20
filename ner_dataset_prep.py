@@ -17,9 +17,7 @@ for file in tqdm(os.listdir(path)):
                 text = soup.text.strip()
                 annotations = list()
                 for tag in soup.find_all('a'):
-                    begin = int(soup.text.index(tag.text))
-                    end = len(tag.text) + begin
-                    annotations.append((text[begin:end], tag['title']))
+                    annotations.append((tag.string, tag['title']))
                     tag.unwrap()
                 if(text and annotations):
                     dataset_list.append([text, annotations])
