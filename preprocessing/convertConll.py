@@ -1,5 +1,8 @@
 # Adapted from https://medium.com/thecyphy/training-custom-ner-model-using-flair-df1f9ea9c762
+'''
+This code is not anymore valid. USe the ner_dataset_prep file
 
+'''
 import pandas as pd
 from tqdm import tqdm
 from difflib import SequenceMatcher
@@ -10,16 +13,16 @@ import re
 from typing import List
 from flair.data import Token
 
-WORD_PUNC = WORD_PUNC = ["።", "፥", "፤", "፨", "?", "!", ":", "፡", "፦", "፣","፣"]
+WORD_PUNC = WORD_PUNC = ["።", "፥", "፤", "፨", "?", "!", ":", "፡", "፦", "፣","፣",";","(",")"]
 
-def matcher(string, pattern):
+def matcher(string, pattern, fromi):
     '''
     Return the start and end index of any pattern present in the text.
     '''
     match_list = []
     pattern = pattern.strip()
     seqMatch = SequenceMatcher(None, string, pattern, autojunk=False)
-    match = seqMatch.find_longest_match(0, len(string), 0, len(pattern))
+    match = seqMatch.find_longest_match(fromi, len(string), 0, len(pattern))
     if (match.size == len(pattern)):
         start = match.a
         end = match.a + match.size
@@ -34,20 +37,32 @@ def mark_sentence(s, match_list):
     '''
     Marks all the entities in the sentence as per the BIO scheme.
     '''
-    word_dict = {}
-    for word in s.split():
-        word_dict[word] = 'O'
-
+    tagged = {}
     for start, end, e_type in match_list:
         temp_str = s[start:end]
         tmp_list = temp_str.split()
         if len(tmp_list) > 1:
-            word_dict[tmp_list[0]] = 'B-' + e_type
+            tagged[start] = tmp_list[0]+'\tB-' + e_type
+            newstart = start + len(tmp_list[0]) +1
             for w in tmp_list[1:]:
-                word_dict[w] = 'I-' + e_type
+                tagged[newstart] = w+'\tI-' + e_type
+                newstart = newstart + len(w) +1
         else:
-            word_dict[temp_str] = 'B-' + e_type
-    return word_dict
+            tagged[start] = temp_str+'\tB-' + e_type
+    index = 0
+    taggedSent = []
+    countTaged = 0
+    for word in s.split(" "):
+        if index in tagged:
+            taggedSent.append(tagged[index])
+            countTaged += 1
+        else:
+            taggedSent.append(word+"\tO")
+        index = index + len(word) +1
+    if (len(tagged)!=countTaged):
+        print("tagging problem")
+
+    return taggedSent
 
 
 def clean(text):
@@ -65,15 +80,17 @@ def create_data(df, filepath):
             text = clean(text)
             text_ = text
             match_list = []
+            fromi =0
             for i in annotation:
-                a, text_ = matcher(clean(text), clean(i[0]))
-                print(text_, a)
+                a, text_ = matcher(text, clean(i[0]),fromi)
                 match_list.append((a[0][0], a[0][1], clean(i[1])))
+                fromi = a[0][0] + len(clean(i[0]))
 
             d = mark_sentence(text, match_list)
 
-            for i in d.keys():
-                f.writelines(i + ' ' + d[i] + '\n')
+            for i in d:
+                tagged = i.split("\t")
+                f.writelines(tagged[0] + '\t' + tagged[1] + '\n')
             f.writelines('\n')
 
 
@@ -133,7 +150,17 @@ def amharic_tokenizer(text: str) -> List[Token]:
                 word = ""
             previchar = char
             word += char
-
+        elif previchar in WORD_PUNC:
+            if len(word) > 0 and previchar != char:
+                start_position = index - len(word)
+                tokens.append(
+                    Token(
+                        text=word, start_position=start_position, whitespace_after=True
+                    )
+                )
+                word = ""
+            previchar = char
+            word += char
         else:
             word += char
     # increment for last token in sentence if not followed by whitespace
