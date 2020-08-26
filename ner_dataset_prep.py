@@ -208,13 +208,13 @@ for file in tqdm(os.listdir(path)):
                             first = True
                             for token in amharic_tokenizer(re.sub('\s+', ' ', nes)):
                                 if first:
-                                    taggedwords.append(token.text +"\tB-"+tag)
+                                    taggedwords.append(token.text +" B-"+tag)
                                     first = False
                                 else:
-                                    taggedwords.append(token.text + "\tI-" + tag)
+                                    taggedwords.append(token.text + " I-" + tag)
                         else:
                             for token in amharic_tokenizer(re.sub('\s+', ' ', word)):
-                                taggedwords.append(token.text + "\tO")
+                                taggedwords.append(token.text + " O")
                         index = index + len(word) +1
                     if counttagged != len(annotations):
                         print("Error in parsing")
@@ -228,21 +228,31 @@ def create_data(taggedlines, filepath):
         for line in taggedlines:
             for taggedword in line:
                 f.writelines(taggedword + '\n')
-                if taggedword.split("\t")[0] in SENT_PUNC:
+                if taggedword.split(" ")[0] in SENT_PUNC:
                     f.writelines('\n')
             f.writelines('\n')
 
 random.seed(30)
 random.shuffle(dataset_list)
 
-splt = len(dataset_list)*0.9
-train = dataset_list[:int(splt)]
+splttest = len(dataset_list)*0.9
+spltdev = len(dataset_list)*0.8
 
-test = dataset_list[int(splt):]
+
+train = dataset_list[:int(spltdev)]
+dev = dataset_list[int(spltdev):int(splttest)]
+test = dataset_list[int(splttest):]
+
 ## path to save the txt file.
 train_filepath = 'data/ner_train.txt'
+dev_filepath = 'data/ner_dev.txt'
 test_filepath = 'data/ner_test.txt'
+
+print (len(dataset_list),len(train), len(dev), len(test) )
 ## creating the file.
 create_data(train, train_filepath)
+create_data(dev, dev_filepath)
 create_data(test, test_filepath)
+
+
 
