@@ -4,7 +4,8 @@ import io
 import pandas as pd
 import numpy as np
 from sklearn.svm import SVR
-from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import train_test_split
+from scipy.stats import spearmanr
 
 class Dataset():
     def __init__(self, dataset_path, embedding_path, random_state=42):
@@ -44,11 +45,13 @@ def train_model(dataset, random_state):
     def matrix_cosine(x, y):
         return np.einsum('ij,ij->i', x, y) / (np.linalg.norm(x, axis=1) * np.linalg.norm(y, axis=1))
     feature = matrix_cosine(word1_embeddings, word2_embeddings).reshape(-1, 1)
-    print(f'feature.shape: {feature.shape}')
+    X_train, X_test, y_train, y_test = train_test_split(feature, similarity, test_size=0.2, random_state=random_state)
     regressor = SVR()
-    scores = cross_val_score(estimator=regressor, X=feature, y=similarity, n_jobs=-1, cv=10)
-    print(f'R2: {scores.mean()} +/- {scores.std() ** 2}')
-
+    regressor.fit(X_train, y_train)
+    y_pred = regressor.predict(X_test)
+    srcc, p = spearmanr(y_test, y_pred)
+    print(f'Spearman correlation coefficient: {srcc}')
+    
 if __name__ == '__main__':
     random_state = 42
     np.random.seed(random_state)
