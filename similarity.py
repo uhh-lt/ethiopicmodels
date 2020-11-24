@@ -45,10 +45,9 @@ def train_model(dataset, output_path, random_state):
     word1_embeddings, word2_embeddings, similarity = dataset.replace_token_with_embed()
     assert(word1_embeddings.shape == word2_embeddings.shape)
     feature = cos(word1_embeddings, word2_embeddings).cpu().numpy()
-    X = pd.DataFrame({'word1_amharic': dataset.df.word1_amharic, 'word2_amharic': dataset.df.word2_amharic, 'feature': feature})
-    srcc, p = spearmanr(similarity, X.feature)
+    srcc, p = spearmanr(similarity, feature)
     print(f'Spearman correlation coefficient: {srcc}')
-    output_df = pd.DataFrame({'word1_amharic': X['word1_amharic'], 'word2_amharic': X['word2_amharic'], 'ground_truth_similarity': X.feature, 'cosine_similarity': similarity})
+    output_df = pd.DataFrame({'word1_amharic': dataset.df.word1_amharic, 'word2_amharic': dataset.df.word2_amharic, 'ground_truth_similarity': similarity, 'cosine_similarity': feature})
     output_df.to_csv(output_path, index=False)
 
     
