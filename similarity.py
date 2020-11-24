@@ -3,9 +3,11 @@ import io
 
 import pandas as pd
 import numpy as np
-from sklearn.svm import SVR
-from sklearn.model_selection import train_test_split
 from scipy.stats import spearmanr
+import torch
+import flair
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+flair.device = device
 
 class Dataset():
     def __init__(self, dataset_path, embedding_path, random_state=42):
@@ -36,23 +38,17 @@ class Dataset():
         word2_embeddings = np.array(self.df.word2_amharic.apply(lambda x: get_embed(x)).tolist())
         print(f'% of unk vectors = {float(self.n_unk_vec)/(self.n_vec + self.n_unk_vec)*100}')
         similarity = np.array(self.df.similarity.tolist())
-        return (word1_embeddings, word2_embeddings, similarity)
+        return (torch.from_numpy(word1_embeddings).float().to(device), torch.from_numpy(word2_embeddings).float().to(device), similarity)
 
 def train_model(dataset, output_path, random_state):
+    cos = torch.nn.CosineSimilarity(dim=1, eps=1e-8)
     word1_embeddings, word2_embeddings, similarity = dataset.replace_token_with_embed()
     assert(word1_embeddings.shape == word2_embeddings.shape)
-    # https://stackoverflow.com/a/49218370/7845431
-    def matrix_cosine(x, y):
-        return np.einsum('ij,ij->i', x, y) / (np.linalg.norm(x, axis=1) * np.linalg.norm(y, axis=1))
-    feature = matrix_cosine(word1_embeddings, word2_embeddings)
+    feature = cos(word1_embeddings, word2_embeddings).cpu().numpy()
     X = pd.DataFrame({'word1_amharic': dataset.df.word1_amharic, 'word2_amharic': dataset.df.word2_amharic, 'feature': feature})
-    X_train, X_test, y_train, y_test = train_test_split(X, similarity, test_size=0.2, random_state=random_state)
-    regressor = SVR()
-    regressor.fit(X_train['feature'].to_numpy().reshape(-1, 1), y_train)
-    y_pred = regressor.predict(X_test['feature'].to_numpy().reshape(-1, 1))
-    srcc, p = spearmanr(y_test, y_pred)
+    srcc, p = spearmanr(similarity, X.feature)
     print(f'Spearman correlation coefficient: {srcc}')
-    output_df = pd.DataFrame({'word1_amharic': X_test['word1_amharic'], 'word2_amharic': X_test['word2_amharic'], 'ground_truth_similarity': y_test, 'predicted_similarity': y_pred})
+    output_df = pd.DataFrame({'word1_amharic': X['word1_amharic'], 'word2_amharic': X['word2_amharic'], 'ground_truth_similarity': X.feature, 'cosine_similarity': similarity})
     output_df.to_csv(output_path, index=False)
 
     
