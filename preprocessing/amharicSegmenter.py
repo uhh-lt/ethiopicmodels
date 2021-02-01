@@ -62,8 +62,10 @@ class AmharicSegmenter:
         
 
     def tokenize_sentence(self, text: str):
-        text = re.sub("\s+", " ",text)
         text = re.sub("\n", "።",text)
+        text = re.sub("\s+", " ",text)
+        #text = re.sub("\r", "።",text)
+        #text = re.sub("\n\r", "።",text)
         tokenized_text = []
         idxs = [-1] # see below, used to start the next sentence after the index of the sentence segmenter
         for sep in self.SENT_PUNC:
