@@ -1,2 +1,14 @@
 # semanticmodelsAmharic
-Different semantic models for Amharic
+Different semantic models and applications for Amharic
+
+# Models
+## Word2Vec
+## FastText
+## RoBERTa
+
+# Tasks
+
+## normalization
+## Sentiment
+## Hate Speech
+
