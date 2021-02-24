@@ -2,33 +2,33 @@
 <!-- saved from url=(0054)https://colorlib.com/etc/bootstrap-sidebar/sidebar-01/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>amharicfactcheck</title>
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="lib/sidebar/css" rel="stylesheet">
 	<link rel="stylesheet" href="lib/sidebar/font-awesome.min.css">
 	<link rel="stylesheet" href="lib/sidebar/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	
+
 	<script type="text/javascript">
 	    function chartData(){
 
 			      var dataPointsA = [];
 			    $.ajax({
                     url: 'https://ltdemos.informatik.uni-hamburg.de/amsol/charts',
-                  
+
                     type: "GET",
                     dataType: "JSON",
                     data: {
                     },
                     success: function (result) {
                         var objData = JSON.parse(result);
-                        
+
                         dataPointsA.push({ label: "Hate", y: objData.Tweets.hate });
                         dataPointsA.push({ label: "Fact", y: objData.Tweets.fact });
                         dataPointsA.push({ label: "Fake", y: objData.Tweets.fake });
                         console.log("Success" + objData);
-                    
+
 
         			    var options = {
         					title: {
@@ -41,30 +41,30 @@
         						legendText: "{label}",
         						indexLabel: "{label} ({y})",
         						yValueFormatString:"#,##0.#"%"",
-        						dataPoints: 
-        						    
+        						dataPoints:
+
         						//{ label: "Facts", y: 30 },
         						//{ label: "Propaganda", y: 31 },
         						//{ label: "Hate", y: 17 },
         						//{ label: "Disinformation", y: 7 }
         						dataPointsA
-        						
+
         					}]
     				};
     				$("#chartContainer").CanvasJSChart(options);
-    			
+
 
                     },
                     error: function () {
                         console.log("error");
                     }
                 });
-                
-                
+
+
 			}
-			
+
 			window.onload = function() {
-			    
+
 			    chartData();
 			}
 	</script>
@@ -93,12 +93,12 @@
 				</ul>
 				<div class="footer">
 					<p>
-					Copyright ©2021 All rights reserved 
+					Copyright ©2021 All rights reserved
 					</p>
 				</div>
 			</div>
 		</nav>
-		
+
 		<div id="content" class="p-4 p-md-5">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="container-fluid">
@@ -112,10 +112,10 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="nav navbar-nav ml-auto">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.php">Home</a>
+								<a class="nav-link" href="home.php">Home</a>
 							</li>
 
-							<li class="nav-item">			
+							<li class="nav-item">
 								<a  target='_blank' class="nav-link" href="https://bit.bdu.edu.et/ict4d/">ICT4D</a>
 							</li>
 							<li class="nav-item">
@@ -130,7 +130,7 @@
 			</nav>
 			<h2 class="mb-4">Chart Report</h2>
 			<p>
-			    The Pie chart provides cumulative information (on Twitter dataset since Jan 2020) on the distributions of facts, hate speech, and fake news. News corpus is used as background information. <kbd>Fake tweets</kbd> are those that are not supported by the news corpora. 
+			    The Pie chart provides cumulative information (on Twitter dataset since Jan 2020) on the distributions of facts, hate speech, and fake news. News corpus is used as background information. <kbd>Fake tweets</kbd> are those that are not supported by the news corpora.
 			</p>
 			<p>
 			    <div id="chartContainer" style="height: 370px; max-width: 100%; margin: 0px auto;"></div>
@@ -142,9 +142,8 @@
 	<script src="lib/sidebar/bootstrap.min.js.download"></script>
 	<script src="lib/sidebar/main.js.download"></script>
 	<script defer="" src="lib/sidebar/beacon.min.js.download"></script>
-	
-		<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script> 
-	
-	<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
-	
+
+		<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+	<script src="lib/jquery.canvasjs.min.js"></script>
+
 </body></html>

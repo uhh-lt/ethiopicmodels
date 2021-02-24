@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 
 <?php
-	function feachData(){
-	    $search_keyword = $_POST['searchkeyword'];
-	    //$search_keyword = rawurlencode($search_keyword);
-	    
-	    $search_keyword = str_replace(' ', '%20', $search_keyword);
-		//echo $search_keyword;		die;
-	    $url = "https://ltdemos.informatik.uni-hamburg.de/amsol/news/" . $search_keyword;
-		
-		
-		$ch = curl_init($url);
-		
-		#curl_setopt($ch, CURLINFO_HEADER_OUT, true);
-		#curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-		
-		curl_setopt($ch, CURLOPT_TIMEOUT, 30);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_CAINFO, true);
-		
-		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-		
-		$server_output = curl_exec ($ch);
-		
-		//echo $server_output . " " . $url;
-		$status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-		
-	    if (!$status  || !($status == 201 || $status == 200)) {
-    		/*print("Error: call to URL $url failed with status $status, response $server_output, curl_error " . curl_error($ch) . ", curl_errno " . curl_errno($ch));*/
-			echo "Error";
-			}else{
-			$decoded = json_decode($server_output , true);
-			
-			
-			
-			$assoc = json_decode($decoded, true);
-			$output =  "";
-			foreach ($assoc as $key => $value) {
-				foreach ($value as $key2 => $value2) {
+    function feachData()
+    {
+        $search_keyword = $_POST['searchkeyword'];
+        //$search_keyword = rawurlencode($search_keyword);
 
-					//$output = $output . "<li class='list-group-item'>" . $value2 . "</li>";
-					
-					
-					$output = $output . "<tr class='v-middle'><td>"
-										.$value2
-					."</td></tr>";
-					
-				}
-			}
-			
-			curl_close ($ch);
+        $search_keyword = str_replace(' ', '%20', $search_keyword);
+        //echo $search_keyword;		die;
+        $url = "https://ltdemos.informatik.uni-hamburg.de/amsol/news/" . $search_keyword;
 
-			return $output;
-		}
-	}
-	?>
+
+        $ch = curl_init($url);
+
+        #curl_setopt($ch, CURLINFO_HEADER_OUT, true);
+        #curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+        curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_CAINFO, true);
+
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+
+        $server_output = curl_exec($ch);
+
+        //echo $server_output . " " . $url;
+        $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+        if (!$status  || !($status == 201 || $status == 200)) {
+            /*print("Error: call to URL $url failed with status $status, response $server_output, curl_error " . curl_error($ch) . ", curl_errno " . curl_errno($ch));*/
+            echo "Error";
+        } else {
+            $decoded = json_decode($server_output, true);
+
+
+
+            $assoc = json_decode($decoded, true);
+            $output =  "";
+            foreach ($assoc as $key => $value) {
+                foreach ($value as $key2 => $value2) {
+
+                    //$output = $output . "<li class='list-group-item'>" . $value2 . "</li>";
+
+
+                    $output = $output . "<tr class='v-middle'><td>"
+                                        .$value2
+                    ."</td></tr>";
+                }
+            }
+
+            curl_close($ch);
+
+            return $output;
+        }
+    }
+    ?>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>amharicfactcheck</title>
 
@@ -65,21 +65,21 @@
 	<link rel="stylesheet" href="lib/sidebar/font-awesome.min.css">
 	<link rel="stylesheet" href="lib/sidebar/style.css">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
-		
+
 
 
 <script type="text/javascript">
-    		
+
 			window.onload = function() {
-			    
+
 			    //chartData();
-			    
+
 			    //lineChartData();
-	
+
 	            $('#dailyInfoTable').DataTable();
 
 	            //$('#factCheckerTable').DataTable();
@@ -110,12 +110,12 @@
 				</ul>
 				<div class="footer">
 					<p>
-					Copyright ©2021 All rights reserved 
+					Copyright ©2021 All rights reserved
 					</p>
 				</div>
 			</div>
 		</nav>
-		
+
 		<div id="content" class="p-4 p-md-5">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="container-fluid">
@@ -129,10 +129,10 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="nav navbar-nav ml-auto">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.php">Home</a>
+								<a class="nav-link" href="home.php">Home</a>
 							</li>
 
-							<li class="nav-item">			
+							<li class="nav-item">
 								<a  target='_blank' class="nav-link" href="https://bit.bdu.edu.et/ict4d/">ICT4D</a>
 							</li>
 							<li class="nav-item">
@@ -165,12 +165,9 @@
                 </thead>
                 <tbody>
 							<?php
-								if(ISSET($_POST['searchusingkeyword'])){
-		
-		
-                            		echo feachData();
-                            
-                            	}
+                                if (isset($_POST['searchusingkeyword'])) {
+                                    echo feachData();
+                                }
                             ?>
 							</tbody>
             </table>
@@ -182,8 +179,8 @@
 	<script src="lib/sidebar/bootstrap.min.js.download"></script>
 	<script src="lib/sidebar/main.js.download"></script>
 	<script defer="" src="lib/sidebar/beacon.min.js.download"></script>
-	
-		
+
+
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
-	
+
 </body></html>
