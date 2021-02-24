@@ -145,9 +145,9 @@
 					</div>
 				</div>
 			</nav>
-			<h2 class="mb-4">Check a Fact</h2>
+			<h2 class="mb-4">Check a fact (from our database)</h2>
 			<p class="text-body">
-			    Check fact allows users to check a given fact, using news corpus as supporting documents. It is purely based on <kbd>query matching</kbd> and an <kbd>AI</kbd> component is in the planning.
+			<kbd> Check a fact </kbd> allows users to check a given fact, using news corpus as supporting documents or a database of facts. It is purely based on <kbd>query matching</kbd>. Employing an <kbd>AI</kbd> component is in the planning.
 			</p>
 			<p>
 			    					<nav class="navbar navbar-light bg-light">
