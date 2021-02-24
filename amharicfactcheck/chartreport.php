@@ -130,7 +130,7 @@
 			</nav>
 			<h2 class="mb-4">Chart Report</h2>
 			<p>
-			    The Pie chart provides commutative information (on Twitter dataset since Jan 2020) on the distributions of facts, hate speech, and fake news. News corpus is used as background information. <kbd>Fake tweets</kbd> are those that are not supported by the news corpora. 
+			    The Pie chart provides cumulative information (on Twitter dataset since Jan 2020) on the distributions of facts, hate speech, and fake news. News corpus is used as background information. <kbd>Fake tweets</kbd> are those that are not supported by the news corpora. 
 			</p>
 			<p>
 			    <div id="chartContainer" style="height: 370px; max-width: 100%; margin: 0px auto;"></div>
