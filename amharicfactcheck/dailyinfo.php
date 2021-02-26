@@ -60,7 +60,7 @@
 					."</a>"
 					."</td><td><span class='badge badge-primary text-uppercase'>"
 					.$speechKey
-					."</span></td></tr>";
+					."</span></td><td onclick='myFunction(this)' class='fa fa-thumbs-up fa-thumbs-up-hate'></td></tr>";
 
 				}
 			}
@@ -92,7 +92,7 @@
 			<div class="p-4 pt-5">
 				<a href="home.php" class="img logo rounded-circle mb-5" style="background-image: url(selam.png);"></a>
 		<?php
-					
+
 					include("sidemenu.php");
 				?>
 				<div class="footer">
@@ -131,6 +131,7 @@
                     <tr>
                         <th class="text-muted">Sentence</th>
                         <th class="text-muted">Labble</th>
+												<th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -144,7 +145,7 @@
 			</p>
 		</div>
 	</div>
-	<?php 
+	<?php
 		include("scripts.php");
 	?>
 
