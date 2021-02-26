@@ -58,9 +58,22 @@
 					."<a target='_blank' class='text-primary' href='https://twitter.com/anyuser/status/{$speechTwitterId}'>"
 					.$key2
 					."</a>"
+					//."<td>"
+					//."<a class='btn' href='https://ltdemos.informatik.uni-hamburg.de/amsol/translate/{$key2}'>Translate</a>"
+					//."</td>"
 					."</td><td><span class='badge badge-primary text-uppercase'>"
-					.$speechKey
-					."</span></td><td onclick='myFunction(this)' class='fa fa-thumbs-up fa-thumbs-up-hate'></td></tr>";
+					.$speechKey;
+					
+					if(strcasecmp($speechKey, "hate") == 0){
+					    $output =  $output . "</span></td><td onclick='myFunction(this)' class='fa fa-thumbs-up fa-thumbs-up-hate'></td></tr>";
+					    
+					}else if(strcasecmp($speechKey, "fake") == 0){
+					    $output =  $output . "</span></td><td onclick='myFunction(this)' class='fa fa-thumbs-up fa-thumbs-up-fake'></td></tr>";
+					    
+					}else{
+					    $output =  $output . "</span></td><td onclick='myFunction(this)' class='fa fa-thumbs-up fa-thumbs-up-normal'></td></tr>";
+					    
+					}
 
 				}
 			}
@@ -80,7 +93,7 @@
 
 			    //lineChartData();
 
-	            $('#dailyInfoTable').DataTable();
+	            $('#dailyInfoTable').DataTable( {"order": []} );
 
 	            //$('#factCheckerTable').DataTable();
 			}
@@ -92,7 +105,7 @@
 			<div class="p-4 pt-5">
 				<a href="home.php" class="img logo rounded-circle mb-5" style="background-image: url(selam.png);"></a>
 		<?php
-
+					
 					include("sidemenu.php");
 				?>
 				<div class="footer">
@@ -131,7 +144,7 @@
                     <tr>
                         <th class="text-muted">Sentence</th>
                         <th class="text-muted">Labble</th>
-												<th></th>
+                        <th class="text-muted"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -145,7 +158,7 @@
 			</p>
 		</div>
 	</div>
-	<?php
+	<?php 
 		include("scripts.php");
 	?>
 

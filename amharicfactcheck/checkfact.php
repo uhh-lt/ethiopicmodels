@@ -69,7 +69,9 @@
 		
 		//lineChartData();
 		
-		$('#dailyInfoTable').DataTable();
+		$('#dailyInfoTable').DataTable( {
+    "order": []
+} );
 		
 		//$('#factCheckerTable').DataTable();
 	}
