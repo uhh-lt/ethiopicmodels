@@ -10,14 +10,18 @@
 
 <script>
 function myFunction(x) {
-
   if ($(x).hasClass("fa-thumbs-up-hate")) {
+    $(x).removeClass("fa-thumbs-up-hate")
     x.classList.toggle("fa-thumbs-up-fake");
 }
-else if ($(x).hasClass("fa-thumbs-fake")) {
+else if ($(x).hasClass("fa-thumbs-up-fake")) {
+  $(x).removeClass("fa-thumbs-up-fake")
   x.classList.toggle("fa-thumbs-up-normal");
+
 }
 else {
+    $(x).removeClass("fa-thumbs-up-normal")
+    $(x).removeClass("fa-thumbs-up-normal")
     x.classList.toggle("fa-thumbs-up-hate");
 }
 

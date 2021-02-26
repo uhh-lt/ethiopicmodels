@@ -32,4 +32,14 @@
 	.fa:hover {
 	  border-color:: blue;
 	}
+	.navbar  {
+    background: #003466 !important;
+	}
+	.navbar a {
+    background: #003466 !important;
+		color: white !important;
+	}
+	body {
+	 font-size: 100%;
+	}
 	</style>
