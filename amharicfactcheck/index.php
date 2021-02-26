@@ -1,7 +1,7 @@
 <?php
-    //header("Location: home.php");
+    header("Location: home.php");
     
-    //exit();
+    exit();
     
-    echo "Please try again, it is on development.";
+    //echo "Please try again, it is on development.";
 ?>
