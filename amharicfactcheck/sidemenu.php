@@ -7,7 +7,7 @@
 		<a  target='_blank' class="nav-link" href="https://bit.bdu.edu.et/ict4d/">ICT4D</a>
 	</li>
 	<li>
-		<a  target='_blank' class="nav-link" href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/people/seid-muhie-yimam.html">Language Technology</a>
+		<a  target='_blank' class="nav-link" href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/people/seid-muhie-yimam.html">NLP Expert</a>
 	</li>
 	<li>
 		<a class="nav-link" href="about.php">About Us</a>
