@@ -48,7 +48,7 @@
     <div class="carousel-item active">
       <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailyhate.png" alt="First slide">
       <div class="carousel-caption d-none d-md-block">
-    <h5>Daily Hate</h5>
+    <h5>Wordcloud computed from hate speech tweets</h5>
     <p>Daily Hate </p>
     </div>
     <div class="carousel-item">
@@ -124,5 +124,4 @@ Build a browser plugin that automatically detects disinformation and abusive tex
 		<?php
 		include("scripts.php");
 	?>
-
 </body></html>
