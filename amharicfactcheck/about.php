@@ -39,7 +39,8 @@
 			<h2 class="mb-4">About Us</h2>
 			ICT4D in collaboration with natural language processing experts from the Language Technology group at the University of Hamburg and mobile and web applications from ShegerApps join efforts in the development of this tool, "AmharicFactChek", to help society fight against hate speech and disinformation.
 			<h3>Who are we?</h3>
-			<p><strong>ICT4D Team</strong>: Information communication technology for development (ICT4D) research center is one of the research centers in Bahir Dar institute of Technology, Bahir Dar University. The aim of the center is to foster the development of the nation by conducting research and developing ICT related projects.</p>
+			<p><strong>ICT4D Team</strong>: Information communication technology for development (ICT4D) research center is one of the research centers in Bahir Dar institute of Technology, Bahir Dar University. The aim of the center is to foster the development of the nation by conducting research and developing ICT related projects.
+			ICT4D oversee the implementation of AmharicFactChek, coordinate the different collaborators, communicate with target clients.</p>
 			<p><strong>Dr. Seid Muhie Yimam</strong>: He is a language technology expert from the LT group, University of Hamburg. He has been working on adaptive machine learning integration on the application, research on low-resource language, and social media analysis. He is responsible for the data processing and API endpoint development for the AmharicFactChek.</p>
 			<p><strong>Samuel Minal</strong>: Is an expert from the ShegerApps, who is responsible for the development of the front end applications of AmharicFactChek</p>
 			<h3>Contact us </h3>
