@@ -1,6 +1,40 @@
 <?php
 	include("header.php");
 ?>
+<style>
+    .carousel-indicators .active{
+    background-color: #f00;
+}
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70, 70, 70, 0.25);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+</style>
+
 </head>
 <body>
 	<div class="wrapper d-flex align-items-stretch">
@@ -38,50 +72,56 @@
 			</nav>
 			<h2 class="mb-4">Home</h2>
 			<p>
+			    <div>
 			   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailyhate.png" alt="First slide">
-      <div class="carousel-caption d-none d-md-block">
-    <h5>Wordcloud computed from hate speech tweets</h5>
-    <p>Daily Hate </p>
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailyhate.png" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Wordcloud computed from hate speech tweets</h5>
+                            <p>Daily Hate </p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailyfake.png" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Daily Fake</h5>
+                            <p>Daily Fake </p>
+                        </div>
+                    
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailytweet.png" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Daily Tweet</h5>
+                            <p>Daily Tweet </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailynews.png" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Daily News</h5>
+                            <p>Daily News </p>
+                        </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailyfake.png" alt="Second slide">
-      <div class="carousel-caption d-none d-md-block">
-    <h5>Daily Fake</h5>
-    <p>Daily Fake </p>
-    </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailytweet.png" alt="Third slide">
-      <div class="carousel-caption d-none d-md-block">
-    <h5>Daily Tweet</h5>
-    <p>Daily Tweet </p>
-    </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailynews.png" alt="Third slide">
-      <div class="carousel-caption d-none d-md-block">
-    <h5>Daily News</h5>
-    <p>Daily News </p>
-    </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 			</p>
 			<p>
 			<h4>How the tool works</h4>
