@@ -11,7 +11,7 @@
 <script>
 
     $('.carousel').carousel({
-      interval: 1000 * 5
+      interval: 1000 * 10
     });
 
     function myFunction(x) {
