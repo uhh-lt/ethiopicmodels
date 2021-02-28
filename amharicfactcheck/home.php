@@ -16,20 +16,20 @@
   outline: black;
   background-size: 100%, 100%;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 3px solid red;
   background-image: none;
 }
 
 .carousel-control-next-icon:after
 {
-  content: '>';
-  font-size: 55px;
+  content: '>>';
+  font-size: 65px;
   color: red;
 }
 
 .carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
+  content: '<<';
+  font-size: 65px;
   color: red;
 }
 

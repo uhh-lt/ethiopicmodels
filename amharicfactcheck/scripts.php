@@ -14,7 +14,7 @@
       interval: 1000 * 10
     });
 
-    function myFunction(x) {
+    function changethumbsupcolor(x) {
         if ($(x).hasClass("fa-thumbs-up-hate")) {
             $(x).removeClass("fa-thumbs-up-hate")
             x.classList.toggle("fa-thumbs-up-fake");

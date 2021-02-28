@@ -63,16 +63,16 @@
 					//."</td>"
 					."</td><td><span class='badge badge-primary text-uppercase'>"
 					.$speechKey;
-					
+
 					if(strcasecmp($speechKey, "hate") == 0){
-					    $output =  $output . "</span></td><td onclick='myFunction(this)' class='fa fa-thumbs-up fa-thumbs-up-hate'></td></tr>";
-					    
+					    $output =  $output . "</span></td><td onclick='changethumbsupcolor(this)' class='fa fa-thumbs-up fa-thumbs-up-hate'></td></tr>";
+
 					}else if(strcasecmp($speechKey, "fake") == 0){
-					    $output =  $output . "</span></td><td onclick='myFunction(this)' class='fa fa-thumbs-up fa-thumbs-up-fake'></td></tr>";
-					    
+					    $output =  $output . "</span></td><td onclick='changethumbsupcolor(this)' class='fa fa-thumbs-up fa-thumbs-up-fake'></td></tr>";
+
 					}else{
-					    $output =  $output . "</span></td><td onclick='myFunction(this)' class='fa fa-thumbs-up fa-thumbs-up-normal'></td></tr>";
-					    
+					    $output =  $output . "</span></td><td onclick='changethumbsupcolor(this)' class='fa fa-thumbs-up fa-thumbs-up-normal'></td></tr>";
+
 					}
 
 				}
@@ -105,7 +105,7 @@
 			<div class="p-4 pt-5">
 				<a href="home.php" class="img logo rounded-circle mb-5" style="background-image: url(selam.png);"></a>
 		<?php
-					
+
 					include("sidemenu.php");
 				?>
 				<div class="footer">
@@ -158,7 +158,7 @@
 			</p>
 		</div>
 	</div>
-	<?php 
+	<?php
 		include("scripts.php");
 	?>
 
