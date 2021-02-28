@@ -84,30 +84,30 @@
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailyhate.png" alt="First slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Wordcloud computed from hate speech tweets</h5>
+                            <h5>Wordcloud computed from  <span style="color: red"> hate speech of the day</span> tweets</h5>
                             <p>Daily Hate </p>
                         </div>
                     </div>
-                    
+
                     <div class="carousel-item">
                         <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailyfake.png" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Daily Fake</h5>
+														<h5>Wordcloud computed from  <span style="color: red"> fake news of the day</span> tweets</h5>
                             <p>Daily Fake </p>
                         </div>
-                    
+
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailytweet.png" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Daily Tweet</h5>
+													  <h5>Wordcloud computed from  <span style="color: red"> tweets of the day</span> tweets</h5>
                             <p>Daily Tweet </p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="https://ltdemos.informatik.uni-hamburg.de/amsol/static/dailynews.png" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Daily News</h5>
+														<h5>Wordcloud computed from  <span style="color: red"> news of the day</span> tweets</h5>
                             <p>Daily News </p>
                         </div>
                     </div>
