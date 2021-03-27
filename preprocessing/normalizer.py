@@ -1,3 +1,4 @@
+import re
 def normalize (norm):
 		norm = norm.replace("ሃ", "ሀ")
 		norm = norm.replace("ሐ", "ሀ")
