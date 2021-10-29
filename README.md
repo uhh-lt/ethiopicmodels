@@ -7,11 +7,5 @@ Different semantic models and applications for Amharic
 ## [Static semantic models](https://github.com/uhh-lt/amharicmodels/wiki/staticmodels)
 ## [Contextual Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/contextual)
 
-# Tasks
-
-## Sentiment
-## POS Tagging
-## NER
-## Similarit 
-## Hate Speech
+# [Tasks](https://github.com/uhh-lt/amharicmodels/wiki/tasks)
 
