@@ -5,7 +5,7 @@ Different semantic models and applications for Amharic
 ## Static semantic models
 ### Word2Vec
 ### FastText
-[Contextual Embeddings](/contextual)
+[Contextual Embeddings](/wiki/contextual)
 
 # Tasks
 
