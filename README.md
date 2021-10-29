@@ -1,4 +1,4 @@
-# Semantic Models Amharic
+# Semantic Models for Amharic
 ![](logo.png)
 
 Different semantic models and applications for Amharic
