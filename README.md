@@ -2,15 +2,18 @@
 ![](logo.png)
 
 Different semantic models and applications for Amharic
-
+----
 # [Introduction](https://github.com/uhh-lt/amharicmodels/wiki/home) 
-
+----
 # Semantic Models 
 ## [Static semantic models](https://github.com/uhh-lt/amharicmodels/wiki/staticmodels)
 ## [Contextual Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/contextual)
-
+----
 # [Tasks](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks)
+----
+# Datasets
 
+----
 
 ## Publications
 
@@ -32,7 +35,7 @@ DOI = {10.3390/fi13110275}
 
 ```
 
-To cite the impacts of homophone normalization, use the the following paper
+To cite the impacts of homophone normalization, use the the following [paper](https://www.inf.uni-hamburg.de/en/inst/ab/lt/publications/2021-belayetal-ict4da-amharicnorm.pdf)
 
 ```
 @InProceedings{ayele2021,
