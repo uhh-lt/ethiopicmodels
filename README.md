@@ -5,9 +5,7 @@ Different semantic models and applications for Amharic
 ## Static semantic models
 ### Word2Vec
 ### FastText
-## contextualized semantic Models
-### RoBERTa
-### FLAIR
+[Contextual Embeddings](/contextual)
 
 # Tasks
 
