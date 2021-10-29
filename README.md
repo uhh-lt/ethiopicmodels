@@ -1,4 +1,5 @@
-# semanticmodelsAmharic
+# Semantic Models Amharic
+![](logo.png)
 Different semantic models and applications for Amharic
 
 # Semantic Models (static and contextualized Embeddings or word representations)
