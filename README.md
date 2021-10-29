@@ -1,14 +1,19 @@
 # semanticmodelsAmharic
 Different semantic models and applications for Amharic
 
-# Models
-## Word2Vec
-## FastText
-## RoBERTa
+# Semantic Models (static and contextualized Embeddings or word representations)
+## Static semantic models
+### Word2Vec
+### FastText
+## contextualized semantic Models
+### RoBERTa
+### FLAIR
 
 # Tasks
 
-## normalization
 ## Sentiment
+## POS Tagging
+## NER
+## Similarit 
 ## Hate Speech
 
