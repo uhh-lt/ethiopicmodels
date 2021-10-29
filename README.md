@@ -30,7 +30,17 @@ ISSN = {1999-5903},
 DOI = {10.3390/fi13110275}
 }
 
+```
 
+To cite the impacts of homophone normalization, use the the following paper
 
+```
+@InProceedings{ayele2021,
+AUTHOR = {Belay, Tadesse. Destaw and Ayele, Abinew Ali and Gelaye, Getie and Yimam, Seid Muhie and Biemann, Chris},
+TITLE = {Impacts of Homophone Normalization on Semantic Models for Amharic},
+booktitle = {Proceedings of the Third International Conference on ICT for Development for Africa (ICT4DA 2021)},
+address = {Bahir Dar, Ethiopia}
+
+}
 
 ```
