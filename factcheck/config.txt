@@ -1,4 +1,0 @@
-[mysql]
-password = PASS
-user = USER
-server = SERV
