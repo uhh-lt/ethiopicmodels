@@ -9,8 +9,6 @@ Different semantic models and applications for Amharic
 ## [Static semantic models](https://github.com/uhh-lt/amharicmodels/wiki/staticmodels)
 ## [Contextual Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/contextual)
 
-### :tada: :tada:  The Amharic RoBERTa model is uploaded in Huggingface [Movie Hate Speech Detection](https://huggingface.co/uhhlt/am-roberta) :tada: :tada: 
-
 
 ----
 # [Tasks](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks)
@@ -38,6 +36,11 @@ DOI = {10.3390/fi13110275}
 }
 
 ```
+
+# Announcements 
+
+### :tada: :tada:  The Amharic RoBERTa model is uploaded in Huggingface [Movie Hate Speech Detection](https://huggingface.co/uhhlt/am-roberta) :tada: :tada: 
+
 
 To cite the impacts of homophone normalization, use the the following [paper](https://www.inf.uni-hamburg.de/en/inst/ab/lt/publications/2021-belayetal-ict4da-amharicnorm.pdf)
 
