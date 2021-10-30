@@ -8,6 +8,10 @@ Different semantic models and applications for Amharic
 # Semantic Models 
 ## [Static semantic models](https://github.com/uhh-lt/amharicmodels/wiki/staticmodels)
 ## [Contextual Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/contextual)
+
+### :tada: :tada:  The Amharic RoBERTa model is uploaded in Huggingface [Movie Hate Speech Detection](https://huggingface.co/uhhlt/am-roberta) :tada: :tada: 
+
+
 ----
 # [Tasks](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks)
 ----
