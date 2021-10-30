@@ -3,7 +3,7 @@
 
 # Announcements 
 
-### :tada: :tada:  The Amharic RoBERTa model is uploaded in Huggingface [Movie Hate Speech Detection](https://huggingface.co/uhhlt/am-roberta) :tada: :tada: ![](images/am-roberta.png)
+### :tada: :tada:  The Amharic RoBERTa model is uploaded in Huggingface [Movie Hate Speech Detection](https://huggingface.co/uhhlt/am-roberta) :tada: :tada  [![](images/am-roberta.png)](https://huggingface.co/uhhlt/am-roberta)
 
 
 Different semantic models and applications for Amharic
