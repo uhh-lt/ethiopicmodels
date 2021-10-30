@@ -1,6 +1,11 @@
 # Semantic Models for Amharic
 ![](logo.png)
 
+# Announcements 
+
+### :tada: :tada:  The Amharic RoBERTa model is uploaded in Huggingface [Movie Hate Speech Detection](https://huggingface.co/uhhlt/am-roberta) :tada: :tada: 
+
+
 Different semantic models and applications for Amharic
 ----
 # [Introduction](https://github.com/uhh-lt/amharicmodels/wiki/home) 
@@ -36,10 +41,6 @@ DOI = {10.3390/fi13110275}
 }
 
 ```
-
-# Announcements 
-
-### :tada: :tada:  The Amharic RoBERTa model is uploaded in Huggingface [Movie Hate Speech Detection](https://huggingface.co/uhhlt/am-roberta) :tada: :tada: 
 
 
 To cite the impacts of homophone normalization, use the the following [paper](https://www.inf.uni-hamburg.de/en/inst/ab/lt/publications/2021-belayetal-ict4da-amharicnorm.pdf)
