@@ -1,5 +1,5 @@
 # Semantic Models for Amharic
-![](logo.png)
+ [![](logo.png)](https://github.com/uhh-lt/amharicmodels/)
 
 # Announcements 
 
