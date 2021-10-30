@@ -17,8 +17,9 @@ Different semantic models and applications for Amharic
 
 ----
 # [Tasks](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks)
+
 ----
-# Datasets
+# [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
 
 ----
 
