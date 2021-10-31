@@ -19,9 +19,9 @@ Different semantic models and applications for Amharic
 # [Tasks](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks)
 
 ----
-# [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
+# The different datsets and resources are available under: [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
 
-# [Segmentation and Tokenization, Romanization](https://github.com/uhh-lt/amharicprocessor)
+# For Amahric word segmentation and tokenization, check this project: [Segmentation](https://github.com/uhh-lt/amharicprocessor)
 ----
 
 ## Publications
