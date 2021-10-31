@@ -5,6 +5,8 @@
 
 ### :tada: :tada:  The Amharic RoBERTa model is uploaded in Huggingface [Amharic RoBERTa Model](https://huggingface.co/uhhlt/am-roberta) :tada: :tada  [![](images/am-roberta.png)](https://huggingface.co/uhhlt/am-roberta)
 
+### :tada: :tada:  The Amharic Segmenter is released and can be installed as [`pip install amseg`](https://pypi.org/project/amseg/) :tada: :tada 
+
 
 # Different semantic models and applications for Amharic
 ----
