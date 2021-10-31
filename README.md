@@ -21,6 +21,7 @@ Different semantic models and applications for Amharic
 ----
 # [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
 
+# [Segmentation and Tokenization, Romanization](https://github.com/uhh-lt/amharicprocessor)
 ----
 
 ## Publications
