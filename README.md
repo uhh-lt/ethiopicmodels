@@ -13,6 +13,7 @@
 * [Introduction](https://github.com/uhh-lt/amharicmodels/wiki/home) 
 ----
 * [Static semantic models](https://github.com/uhh-lt/amharicmodels/wiki/staticmodels)
+* ---
 * [Contextual Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/contextual)
 
 
@@ -22,6 +23,7 @@
 
 ----
 * The different datsets and resources are available under: [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
+---
 
 * For Amahric word segmentation and tokenization, check this project: [Segmentation](https://github.com/uhh-lt/amharicprocessor)
 ----
