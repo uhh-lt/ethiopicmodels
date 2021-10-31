@@ -13,7 +13,7 @@
 * [Introduction](https://github.com/uhh-lt/amharicmodels/wiki/home) 
 ----
 * [Static semantic models](https://github.com/uhh-lt/amharicmodels/wiki/staticmodels)
-* ---
+ ---
 * [Contextual Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/contextual)
 
 
