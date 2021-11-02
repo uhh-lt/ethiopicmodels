@@ -3,24 +3,29 @@
 
 # Announcements 
 
-### :tada: :tada:  The Amharic RoBERTa model is uploaded in Huggingface [Movie Hate Speech Detection](https://huggingface.co/uhhlt/am-roberta) :tada: :tada  [![](images/am-roberta.png)](https://huggingface.co/uhhlt/am-roberta)
+###  :tada: :tada:  :tada: The Amharic RoBERTa model is uploaded in Huggingface [Amharic RoBERTa Model](https://huggingface.co/uhhlt/am-roberta) :tada: :tada: :tada:  [![](images/am-roberta.png)](https://huggingface.co/uhhlt/am-roberta)
+
+###  :tada: :tada:  The Amharic Segmenter is released and can be installed as [`pip install amseg`](https://pypi.org/project/amseg/) :tada: :tada 
 
 
-Different semantic models and applications for Amharic
+# Different semantic models and applications for Amharic
 ----
-# [Introduction](https://github.com/uhh-lt/amharicmodels/wiki/home) 
+* [Introduction](https://github.com/uhh-lt/amharicmodels/wiki/home) 
 ----
-# Semantic Models 
-## [Static semantic models](https://github.com/uhh-lt/amharicmodels/wiki/staticmodels)
-## [Contextual Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/contextual)
+* [Static semantic models](https://github.com/uhh-lt/amharicmodels/wiki/Static-Models)
+ ---
+* [Contextual Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/contextual)
 
-
-----
-# [Tasks](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks)
 
 ----
-# [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
+# Tasks, Datasets and Preprocessing tools
+* [Tasks](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks)
 
+----
+* The different datsets and resources are available under: [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
+---
+
+* For Amahric word segmentation and tokenization, check this project: [Segmentation](https://github.com/uhh-lt/amharicprocessor)
 ----
 
 ## Publications
