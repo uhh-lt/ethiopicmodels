@@ -14,7 +14,7 @@
 ----
 * [Static word2Vec Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/Static-Models)
 ---
-* [Network Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/network)
+* [Network Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/Network-Embedding)
  ---
 * [Contextual Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/contextual)
 
