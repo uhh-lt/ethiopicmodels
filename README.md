@@ -12,7 +12,9 @@
 ----
 * [Introduction](https://github.com/uhh-lt/amharicmodels/wiki/home) 
 ----
-* [Static semantic models](https://github.com/uhh-lt/amharicmodels/wiki/Static-Models)
+* [Static word2Vec Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/Static-Models)
+---
+* [Network Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/network)
  ---
 * [Contextual Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/contextual)
 
