@@ -11,11 +11,11 @@
 # Different semantic models and applications for Amharic
 ----
 * [Introduction](https://github.com/uhh-lt/amharicmodels/wiki/home) 
-----
+
 * [Static word2Vec Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/Static-Models)
----
+
 * [Network Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/Network-Embedding)
- ---
+
 * [Contextual Embeddings](https://github.com/uhh-lt/amharicmodels/wiki/contextual)
 
 
