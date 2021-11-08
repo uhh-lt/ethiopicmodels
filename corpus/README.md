@@ -12,4 +12,4 @@ In total, `6,151,995` sentences with over `335` million tokens were collected th
 The dataset are availbel in `Train`, `Development` and `Testing` set split in the [Mendeley Dataset Repository](https://data.mendeley.com/datasets/dtywyf3sth/1).
 
 
-~[](../images/mendeley-amharic.png)
+![](../images/mendeley-amharic.png)
