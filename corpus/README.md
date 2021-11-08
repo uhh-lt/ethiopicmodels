@@ -13,3 +13,5 @@ The dataset are availbel in `Train`, `Development` and `Testing` set split in th
 
 
 ![](../images/mendeley-amharic.png)
+
+ [![](../images/mendeley-amharic.png)](https://data.mendeley.com/datasets/dtywyf3sth/1)
