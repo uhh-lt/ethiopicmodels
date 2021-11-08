@@ -9,4 +9,4 @@ News articles were scraped from January 2020 until May 2020 on a daily basis usi
 Similarly, using `Twitter` and `YouTube APIs`, we collected tweets and comments written in the `Fidel` script. 
 In total, `6,151,995` sentences with over `335` million tokens were collected that are used to train the different semantic models.
 
-The dataset are availbel in `Train`, `Development` and `Testing` set split in the [Mendeley Dataset repository](https://data.mendeley.com/datasets/dtywyf3sth/1).
+The dataset are availbel in `Train`, `Development` and `Testing` set split in the [Mendeley Dataset Repository](https://data.mendeley.com/datasets/dtywyf3sth/1).
