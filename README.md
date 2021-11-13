@@ -13,6 +13,10 @@
 
 ###  :tada: :tada:  The Flair based Amharic Sentiment classifier model is now released [am-flair-sent](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#sentiment) :tada: :tada: 
 
+###  :tada: :tada:  The Flair based Amharic POS tagger is now released [am-flair-pos](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#pos-tagging) :tada: :tada: 
+
+
+
 # Different semantic models and applications for Amharic
 ----
 * [Introduction](https://github.com/uhh-lt/amharicmodels/wiki/home) 
