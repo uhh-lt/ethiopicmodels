@@ -5,6 +5,8 @@
 
 ###  :tada: :tada:  :tada: The Amharic RoBERTa model is uploaded in Huggingface [Amharic RoBERTa Model](https://huggingface.co/uhhlt/am-roberta) :tada: :tada: :tada:  [![](images/am-roberta.png)](https://huggingface.co/uhhlt/am-roberta)
 
+###  :tada: :tada:  The Amharic FLAIR embedding model is integrated into the FLAIR library as [`am-forward`](https://github.com/flairNLP/flair/pull/2497) :tada: :tada  The model will be accessible on the next FLAIR release. [Details](https://github.com/flairNLP/flair/blob/master/resources/docs/embeddings/FLAIR_EMBEDDINGS.md)
+
 ###  :tada: :tada:  The Amharic Segmenter is released and can be installed as [`pip install amseg`](https://pypi.org/project/amseg/) :tada: :tada 
 
 ###  :tada: :tada:  The Flair based Amharic NER classifier model is now released [am-flair-ner](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#ner) :tada: :tada 
