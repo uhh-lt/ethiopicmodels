@@ -33,6 +33,7 @@
 * Here, we have described the different NLP tasks for which we built models using the benchmark datasets [Tasks](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks)
 * [NER](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#ner)
 * [Sentiment](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#sentiment)
+* [POS tagging](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#pos-tagging)
 ----
 * The different datsets and resources are available under: [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
 * [Named Entity recognition dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#named-entity-recognition)
