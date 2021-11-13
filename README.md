@@ -9,6 +9,7 @@
 
 ###  :tada: :tada:  The Flair based Amharic NER classifier model is now released [am-flair-ner](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#ner) :tada: :tada 
 
+###  :tada: :tada:  The Flair based Amharic Sentiment classifier model is now released [am-flair-ner](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#sentiment) :tada: :tada 
 
 # Different semantic models and applications for Amharic
 ----
