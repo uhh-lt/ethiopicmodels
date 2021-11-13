@@ -22,7 +22,7 @@
 ----
 # Tasks, Datasets and Preprocessing tools
 * Here, we have described the different NLP tasks for which we built models using the benchmark datasets [Tasks](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks)
-
+* [NER](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#ner)
 ----
 * The different datsets and resources are available under: [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
 ---
