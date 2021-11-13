@@ -25,6 +25,7 @@
 * [NER](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#ner)
 ----
 * The different datsets and resources are available under: [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
+* [Named Entity recognition dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#named-entity-recognition)
 ---
 
 * For Amahric word segmentation and tokenization, check this project: [Segmentation](https://github.com/uhh-lt/amharicprocessor)
