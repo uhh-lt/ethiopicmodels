@@ -1,3 +1,4 @@
+ [![](../logo.png)](https://github.com/uhh-lt/amharicmodels/)
 # Introduction
 The different classification models for Amharic NLP tasks are discussed in the [NLP Tasks](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks) Section.
 
