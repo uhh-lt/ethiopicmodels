@@ -1,3 +1,5 @@
+ [![](logo.png)](https://github.com/uhh-lt/amharicmodels/)
+ 
 # Introduction
 To build distributional semantic models, a large amount of text is required.
 These days, an enormous amount of texts are being generated continuously from different sources. 
