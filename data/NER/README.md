@@ -1,3 +1,4 @@
+ [![](../../logo.png)](https://github.com/uhh-lt/amharicmodels/)
 # Benchmark dataset for Amharic NER
 The Amharic named entity dataset is annotated within the SAY project at New Mexico State University’s Computing Research Laboratory was used. The data is annotated with six classes, namely `person`, `location`, `organization`, `time`, `title`, and `others`. 
 
