@@ -45,6 +45,8 @@ Read this [Medium article](https://medium.com/@seidymam/introducing-various-sema
 * For Amahric word segmentation and tokenization, check this project: [Segmentation](https://github.com/uhh-lt/amharicprocessor)
 ----
 
+[![](../images/semantic_models_Amharic_poster.png)](https://medium.com/@seidymam/introducing-various-semantic-models-for-amharic-experimentation-and-evaluation-with-multiple-tasks-ef5c8ed063bc)
+
 ## Publications
 
 To cite the different Amharic NLP models and resources, use the following [paper](https://www.mdpi.com/1999-5903/13/11/275)
