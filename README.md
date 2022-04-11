@@ -1,6 +1,12 @@
 Read this [Medium article](https://medium.com/@seidymam/introducing-various-semantic-models-for-amharic-experimentation-and-evaluation-with-multiple-tasks-ef5c8ed063bc) for full discussion.
 # Semantic Models for Amharic
  [![](logo.png)](https://github.com/uhh-lt/amharicmodels/)
+ 
+ # The semantic models resources are added to [Lanfrica](https://lanfrica.com/)
+ ### [Semantic models paper](https://lanfrica.com/record/introducing-various-semantic-models-for-amharic-experimentation-and-evaluation-with-multiple-tasks-and-datasets)
+ ### [amharic-corpus](https://lanfrica.com/record/amharic-corpus)
+ ### [Semantic models](https://lanfrica.com/record/semantic-models-for-amharic)
+### [Amharic Segmenter](https://lanfrica.com/record/amharic-segmenter-and-tokenizer)
 
 # Announcements 
 
