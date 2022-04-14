@@ -77,11 +77,16 @@ DOI = {10.3390/fi13110275}
 To cite the impacts of homophone normalization, use the the following [paper](https://www.inf.uni-hamburg.de/en/inst/ab/lt/publications/2021-belayetal-ict4da-amharicnorm.pdf)
 
 ```
-@InProceedings{ayele2021,
-AUTHOR = {Belay, Tadesse. Destaw and Ayele, Abinew Ali and Gelaye, Getie and Yimam, Seid Muhie and Biemann, Chris},
-TITLE = {Impacts of Homophone Normalization on Semantic Models for Amharic},
-booktitle = {Proceedings of the Third International Conference on ICT for Development for Africa (ICT4DA 2021)},
-address = {Bahir Dar, Ethiopia}
+@inproceedings{belay2021impacts,
+  title={Impacts of Homophone Normalization on Semantic Models for Amharic},
+  author={Belay, Tadesse Destaw and Ayele, Abinew Ali and Gelaye, Getie and Yimam, Seid Muhie and Biemann, Chris},
+  booktitle={2021 International Conference on Information and Communication Technology for Development for Africa (ICT4DA)},
+  pages={101-106},
+  year={2021},
+  ISSN = {978-1-6654-3666-3},
+  DOI = (10.1109/ICT4DA53266.2021.9672229},
+  publisher={IEEE}
+}
 
 }
 
