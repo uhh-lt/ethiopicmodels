@@ -88,6 +88,4 @@ To cite the impacts of homophone normalization, use the the following [paper](ht
   publisher={IEEE}
 }
 
-}
-
 ```
