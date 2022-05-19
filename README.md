@@ -5,7 +5,7 @@
  # The semantic models resources are added to [Lanfrica](https://lanfrica.com/)
  ### [amharic-corpus](https://lanfrica.com/record/amharic-corpus)
  ### [Semantic models](https://lanfrica.com/record/semantic-models-for-amharic)
-### [Amharic Segmenter](https://lanfrica.com/record/amharic-segmenter-and-tokenizer)
+### [Amharic Segmenter, toknizer, and translitrator](https://lanfrica.com/record/amharic-segmenter-and-tokenizer)
 
 # Announcements 
 
@@ -13,7 +13,7 @@
 
 ###  :tada: :tada:  The Amharic FLAIR embedding model is integrated into the FLAIR library as [`am-forward`](https://github.com/flairNLP/flair/pull/2497) :tada: :tada:  The model will be accessible on the next FLAIR release. [Details](https://github.com/flairNLP/flair/blob/master/resources/docs/embeddings/FLAIR_EMBEDDINGS.md)
 
-###  :tada: :tada:  The Amharic Segmenter is released and can be installed as [`pip install amseg`](https://pypi.org/project/amseg/) :tada: :tada: 
+###  :tada: :tada:  The Amharic Segmenter, Toknizer, and Translitrator  is released and can be installed as [`pip install amseg`](https://pypi.org/project/amseg/) :tada: :tada: 
 
 ###  :tada: :tada:  The Flair based Amharic NER classifier model is now released [am-flair-ner](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#ner) :tada: :tada: 
 
@@ -40,14 +40,16 @@
 * [NER](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#ner)
 * [Sentiment](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#sentiment)
 * [POS tagging](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#pos-tagging)
+* [Question classification](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#question-classification)
 ----
 * The different datsets and resources are available under: [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
 * [Named Entity recognition dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#named-entity-recognition)
 * [POS dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#named-entity-recognition)
 * [Sentiment Dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#named-entity-recognition)
+* [Question Classification Dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#amharic-question-answering)
 ---
 
-* For Amahric word segmentation and tokenization, check this project: [Segmentation](https://github.com/uhh-lt/amharicprocessor)
+* For Amahric word segmentation, tokenization, and translitration check this project: [Segmentation](https://github.com/uhh-lt/amharicprocessor)
 ----
 
 [![](./images/semantic_models_Amharic_poster.png)](https://medium.com/@seidymam/introducing-various-semantic-models-for-amharic-experimentation-and-evaluation-with-multiple-tasks-ef5c8ed063bc)
@@ -85,6 +87,20 @@ To cite the impacts of homophone normalization, use the the following [paper](ht
   ISSN = {978-1-6654-3666-3},
   DOI = (10.1109/ICT4DA53266.2021.9672229},
   publisher={IEEE}
+}
+
+```
+
+To cite the Question Answering Classification for Amharic, use the the following [paper](https://www.inf.uni-hamburg.de/en/inst/ab/lt/publications/belay2022question.pdf)
+
+```
+@inproceedings{belay2022question,
+  title={Question Answering Classification for Amharic Social Media Community Based Questions},
+  author={Belay, Tadesse Destaw and Yimam, Seid Muhie and Gelaye, Getie and Ayele, Abinew Ali  and Biemann, Chris},
+  booktitle={2022  1st Annual Meeting of the ELRA/ISCA Special Interest Group on Under-Resourced Languages (SIGUL)},
+  pages={Page will appear},
+  year={2022},
+  publisher={arXiv}
 }
 
 ```
