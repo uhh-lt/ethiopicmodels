@@ -46,7 +46,7 @@
 * [Named Entity recognition dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#named-entity-recognition)
 * [POS dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#named-entity-recognition)
 * [Sentiment Dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#named-entity-recognition)
-* [Question Classification Dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#amharic-question-answering)
+* [Question Classification Dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#amharic-question-classification)
 ---
 
 * For Amahric word segmentation, tokenization, and translitration check this project: [Segmentation](https://github.com/uhh-lt/amharicprocessor)
