@@ -1,5 +1,5 @@
 ## Read this [Medium article](https://medium.com/@seidymam/introducing-various-semantic-models-for-amharic-experimentation-and-evaluation-with-multiple-tasks-ef5c8ed063bc) for full discussion.
-# Semantic Models for Amharic
+# Semantic Models for Etiopic
  [![](logo.png)](https://github.com/uhh-lt/amharicmodels/)
  
  # The semantic models resources are added to [Lanfrica](https://lanfrica.com/)
@@ -49,7 +49,7 @@
 * [Question Classification Dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#amharic-question-classification)
 ---
 
-* For Amahric word segmentation, tokenization, and translitration check this project: [Segmentation](https://github.com/uhh-lt/amharicprocessor)
+* For Etiopic word segmentation, tokenization, and translitration check this project: [Segmentation](https://github.com/uhh-lt/amharicprocessor)
 ----
 
 [![](./images/semantic_models_Amharic_poster.png)](https://medium.com/@seidymam/introducing-various-semantic-models-for-amharic-experimentation-and-evaluation-with-multiple-tasks-ef5c8ed063bc)
