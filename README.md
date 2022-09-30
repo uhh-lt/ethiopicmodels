@@ -1,5 +1,5 @@
 ## Read this [Medium article](https://medium.com/@seidymam/introducing-various-semantic-models-for-amharic-experimentation-and-evaluation-with-multiple-tasks-ef5c8ed063bc) for full discussion.
-# Semantic Models for Etiopic
+# Semantic Models for Ethiopic
  [![](logo.png)](https://github.com/uhh-lt/amharicmodels/)
  
  # The semantic models resources are added to [Lanfrica](https://lanfrica.com/)
