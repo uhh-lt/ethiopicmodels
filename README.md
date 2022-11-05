@@ -41,12 +41,15 @@
 * [Sentiment](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#sentiment)
 * [POS tagging](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#pos-tagging)
 * [Question classification](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#question-classification)
+* [Machine Translation](https://github.com/uhh-lt/amharicmodels/wiki/NLP-Tasks#machine-translation)
 ----
 * The different datsets and resources are available under: [Datasets](https://github.com/uhh-lt/amharicmodels/wiki/Datasets)
 * [Named Entity recognition dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#named-entity-recognition)
 * [POS dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#named-entity-recognition)
 * [Sentiment Dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#named-entity-recognition)
 * [Question Classification Dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#amharic-question-classification)
+* [Machine Translation Dataset](https://github.com/uhh-lt/amharicmodels/wiki/Datasets#amharic-machine-translation)
+
 ---
 
 * For Etiopic word segmentation, tokenization, and translitration check this project: [Segmentation](https://github.com/uhh-lt/amharicprocessor)
@@ -91,13 +94,27 @@ To cite the impacts of homophone normalization, use the the following [paper](ht
 
 ```
 
-To cite the Question Answering Classification for Amharic, use the the following [paper](https://www.inf.uni-hamburg.de/en/inst/ab/lt/publications/belay2022question.pdf)
+To cite the Question Answering Classification for Amharic, use the the following [paper](https://aclanthology.org/2022.sigul-1.18.pdf)
 
 ```
 @inproceedings{belay2022question,
   title={Question Answering Classification for Amharic Social Media Community Based Questions},
   author={Belay, Tadesse Destaw and Yimam, Seid Muhie and Gelaye, Getie and Ayele, Abinew Ali  and Biemann, Chris},
   booktitle={2022  1st Annual Meeting of the ELRA/ISCA Special Interest Group on Under-Resourced Languages (SIGUL)},
+  pages={137-145},
+  year={2022},
+  publisher={aclanthology}
+}
+
+```
+
+To cite biderectional Amharic to English Machine Translation, use the the following [paper](https://arxiv.org/abs/2210.15224)
+
+```
+@inproceedings{belay2022question,
+  title={The Effect of Normalization for Bi-directional Amharic-English Neural Machine Translation},
+  author={Belay, Tadesse Destaw and Tonja, Atnafu Lambebo and Kolesnikova, Olga and Yimam, Seid Muhie and Ayele, Abinew Ali  and Haile, Silesh Bogale and Sidorov, Grigori and Gelbukh, Alexander},
+  booktitle={2022  International Conference on Information and Communication Technology for Development for Africa (ICT4DA 2022)},
   pages={Page will appear},
   year={2022},
   publisher={arXiv}
